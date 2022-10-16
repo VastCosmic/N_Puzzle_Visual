@@ -19,12 +19,13 @@ namespace N_Puzzle_Visual
             InitializeComponent();
         }
 
-        //public string path;
+        public string path;
         private void file_chose_Click(object sender, EventArgs e)
         {
-            OpenFileDialog file_picture = new OpenFileDialog();
-            file_picture.InitialDirectory = ".";
-            file_picture.ShowDialog();
+            OpenFileDialog file = new OpenFileDialog();
+            file.InitialDirectory = " ";
+            file.ShowDialog();
+            path = file.FileName;
         }
 
         //创建按钮控件数组
@@ -49,17 +50,19 @@ namespace N_Puzzle_Visual
             num[14] = num14;
             num[15] = num15;
 
-            
-
-            //System.IO.StreamReader file = new System.IO.StreamReader(@"C:\Users\VastCosmic\Desktop\road.txt");
-            string[] lines = System.IO.File.ReadAllLines(@"C:\Users\VastCosmic\Desktop\road.txt");
+            //文件读取
+            if(path == null)
+            {
+                MessageBox.Show("请选择路径文件！","警告");
+                return;
+            }
+            string[] lines = System.IO.File.ReadAllLines(@path);
             foreach (string line in lines)
             {
                 //MessageBox.Show(line);
                 Move_block(Convert.ToInt32(line));
                 Thread.Sleep(10);
             }
-
         }
 
         public void Move_block(int block)
