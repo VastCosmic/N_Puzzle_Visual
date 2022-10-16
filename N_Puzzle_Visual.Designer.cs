@@ -45,6 +45,7 @@
             this.num14 = new System.Windows.Forms.Button();
             this.num13 = new System.Windows.Forms.Button();
             this.button_start = new System.Windows.Forms.Button();
+            this.file_chose = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // num1
@@ -211,7 +212,7 @@
             // 
             // button_start
             // 
-            this.button_start.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button_start.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold);
             this.button_start.Location = new System.Drawing.Point(33, 480);
             this.button_start.Name = "button_start";
             this.button_start.Size = new System.Drawing.Size(206, 40);
@@ -220,11 +221,23 @@
             this.button_start.UseVisualStyleBackColor = true;
             this.button_start.Click += new System.EventHandler(this.button_start_Click);
             // 
+            // file_chose
+            // 
+            this.file_chose.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold);
+            this.file_chose.Location = new System.Drawing.Point(245, 480);
+            this.file_chose.Name = "file_chose";
+            this.file_chose.Size = new System.Drawing.Size(206, 40);
+            this.file_chose.TabIndex = 17;
+            this.file_chose.Text = "选择路径文件";
+            this.file_chose.UseVisualStyleBackColor = true;
+            this.file_chose.Click += new System.EventHandler(this.file_chose_Click);
+            // 
             // N_Puzzle_Visual_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(482, 553);
+            this.Controls.Add(this.file_chose);
             this.Controls.Add(this.num12);
             this.Controls.Add(this.button_start);
             this.Controls.Add(this.num15);
@@ -270,6 +283,7 @@
         private System.Windows.Forms.Button num14;
         private System.Windows.Forms.Button num13;
         private System.Windows.Forms.Button button_start;
+        private System.Windows.Forms.Button file_chose;
     }
 }
 

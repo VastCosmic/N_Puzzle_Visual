@@ -19,11 +19,14 @@ namespace N_Puzzle_Visual
             InitializeComponent();
         }
 
-        /*
-        1 2 3 4 5 6 7 8 9 10 0 12 13 14 11 15
-        1 2 3 4 5 6 7 8 9 10 11 12 13 14 0 15
-        1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 0
-        */
+        //public string path;
+        private void file_chose_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog file_picture = new OpenFileDialog();
+            file_picture.InitialDirectory = ".";
+            file_picture.ShowDialog();
+        }
+
         //创建按钮控件数组
         private Button[] num = new Button[16];
         private void button_start_Click(object sender, EventArgs e)
@@ -46,12 +49,19 @@ namespace N_Puzzle_Visual
             num[14] = num14;
             num[15] = num15;
 
-            Move_block(15);
-            Thread.Sleep(100);
-            Move_block(11);
-            Thread.Sleep(100);
+            
+
+            //System.IO.StreamReader file = new System.IO.StreamReader(@"C:\Users\VastCosmic\Desktop\road.txt");
+            string[] lines = System.IO.File.ReadAllLines(@"C:\Users\VastCosmic\Desktop\road.txt");
+            foreach (string line in lines)
+            {
+                //MessageBox.Show(line);
+                Move_block(Convert.ToInt32(line));
+                Thread.Sleep(10);
+            }
+
         }
-    
+
         public void Move_block(int block)
         {
             //block的坐标，作为空格目标坐标
@@ -59,52 +69,68 @@ namespace N_Puzzle_Visual
             int Next_locationY = num[block].Location.Y;
 
             //由于交换的格与空格相比，必有X或Y坐标其一相等，所以只需改变他们的其中一个坐标，进行移动
-            while (num[block].Location.X > num[0].Location.X)
+            if (num[block].Location.X > num[0].Location.X)
             {
-                num[block].Location = new System.Drawing.Point(num[block].Location.X - 1, num[block].Location.Y);
-                Thread.Sleep(1);
-            }
-            while (num[0].Location.X < Next_locationX)
-            {
-                num[0].Location = new System.Drawing.Point(num[0].Location.X + 1, num[0].Location.Y);
-                //Thread.Sleep(1);
-            }
-
-
-            while (num[block].Location.X < num[0].Location.X)
-            {
-                num[block].Location = new System.Drawing.Point(num[block].Location.X + 1, num[block].Location.Y);
-                Thread.Sleep(1);
-            }
-            while (num[0].Location.X > Next_locationX)
-            {
-                num[0].Location = new System.Drawing.Point(num[0].Location.X - 1, num[0].Location.Y);
-                //Thread.Sleep(1);
+                while (num[block].Location.X > num[0].Location.X)
+                {
+                    num[block].Location = new System.Drawing.Point(num[block].Location.X - 1, num[block].Location.Y);
+                    Thread.Sleep(1);
+                }
+                while (num[0].Location.X < Next_locationX)
+                {
+                    num[0].Location = new System.Drawing.Point(num[0].Location.X + 1, num[0].Location.Y);
+                    //Thread.Sleep(1);
+                }
+                return; //直接结束
             }
 
 
-            while (num[block].Location.Y > num[0].Location.Y)
+            if (num[block].Location.X < num[0].Location.X)
             {
-                num[block].Location = new System.Drawing.Point(num[block].Location.X, num[block].Location.Y - 1);
-                Thread.Sleep(1);
-            }
-            while (num[0].Location.Y < Next_locationY)
-            {
-                num[0].Location = new System.Drawing.Point(num[0].Location.X, num[0].Location.Y + 1);
-                //Thread.Sleep(1);
+                while (num[block].Location.X < num[0].Location.X)
+                {
+                    num[block].Location = new System.Drawing.Point(num[block].Location.X + 1, num[block].Location.Y);
+                    Thread.Sleep(1);
+                }
+                while (num[0].Location.X > Next_locationX)
+                {
+                    num[0].Location = new System.Drawing.Point(num[0].Location.X - 1, num[0].Location.Y);
+                    //Thread.Sleep(1);
+                }
+                return; //直接结束
             }
 
-            while (num[block].Location.Y < num[0].Location.Y)
+
+            if (num[block].Location.Y > num[0].Location.Y)
             {
-                num[block].Location = new System.Drawing.Point(num[block].Location.X, num[block].Location.Y + 1);
-                Thread.Sleep(1);
+                while (num[block].Location.Y > num[0].Location.Y)
+                {
+                    num[block].Location = new System.Drawing.Point(num[block].Location.X, num[block].Location.Y - 1);
+                    Thread.Sleep(1);
+                }
+                while (num[0].Location.Y < Next_locationY)
+                {
+                    num[0].Location = new System.Drawing.Point(num[0].Location.X, num[0].Location.Y + 1);
+                    //Thread.Sleep(1);
+                }
+                return; //直接结束
             }
-            while (num[0].Location.Y > Next_locationY)
+
+            if (num[block].Location.Y < num[0].Location.Y)
             {
-                num[0].Location = new System.Drawing.Point(num[0].Location.X, num[0].Location.Y - 1);
-                //Thread.Sleep(1);
+                while (num[block].Location.Y < num[0].Location.Y)
+                {
+                    num[block].Location = new System.Drawing.Point(num[block].Location.X, num[block].Location.Y + 1);
+                    Thread.Sleep(1);
+                }
+                while (num[0].Location.Y > Next_locationY)
+                {
+                    num[0].Location = new System.Drawing.Point(num[0].Location.X, num[0].Location.Y - 1);
+                    //Thread.Sleep(1);
+                }
+                return;//直接结束
             }
         }
-        
+
     }
 }
