@@ -46,13 +46,14 @@
             this.num13 = new System.Windows.Forms.Button();
             this.button_start = new System.Windows.Forms.Button();
             this.file_chose = new System.Windows.Forms.Button();
+            this.button_reload = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // num1
             // 
             this.num1.Font = new System.Drawing.Font("微软雅黑", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.num1.Location = new System.Drawing.Point(25, 24);
-            this.num1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.num1.Margin = new System.Windows.Forms.Padding(2);
             this.num1.Name = "num1";
             this.num1.Size = new System.Drawing.Size(75, 80);
             this.num1.TabIndex = 0;
@@ -63,7 +64,7 @@
             // 
             this.num2.Font = new System.Drawing.Font("微软雅黑", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.num2.Location = new System.Drawing.Point(104, 24);
-            this.num2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.num2.Margin = new System.Windows.Forms.Padding(2);
             this.num2.Name = "num2";
             this.num2.Size = new System.Drawing.Size(75, 80);
             this.num2.TabIndex = 1;
@@ -74,7 +75,7 @@
             // 
             this.num3.Font = new System.Drawing.Font("微软雅黑", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.num3.Location = new System.Drawing.Point(184, 24);
-            this.num3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.num3.Margin = new System.Windows.Forms.Padding(2);
             this.num3.Name = "num3";
             this.num3.Size = new System.Drawing.Size(75, 80);
             this.num3.TabIndex = 2;
@@ -85,7 +86,7 @@
             // 
             this.num4.Font = new System.Drawing.Font("微软雅黑", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.num4.Location = new System.Drawing.Point(263, 24);
-            this.num4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.num4.Margin = new System.Windows.Forms.Padding(2);
             this.num4.Name = "num4";
             this.num4.Size = new System.Drawing.Size(75, 80);
             this.num4.TabIndex = 3;
@@ -96,7 +97,7 @@
             // 
             this.num8.Font = new System.Drawing.Font("微软雅黑", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.num8.Location = new System.Drawing.Point(263, 109);
-            this.num8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.num8.Margin = new System.Windows.Forms.Padding(2);
             this.num8.Name = "num8";
             this.num8.Size = new System.Drawing.Size(75, 80);
             this.num8.TabIndex = 7;
@@ -107,7 +108,7 @@
             // 
             this.num7.Font = new System.Drawing.Font("微软雅黑", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.num7.Location = new System.Drawing.Point(184, 109);
-            this.num7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.num7.Margin = new System.Windows.Forms.Padding(2);
             this.num7.Name = "num7";
             this.num7.Size = new System.Drawing.Size(75, 80);
             this.num7.TabIndex = 6;
@@ -118,7 +119,7 @@
             // 
             this.num6.Font = new System.Drawing.Font("微软雅黑", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.num6.Location = new System.Drawing.Point(104, 109);
-            this.num6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.num6.Margin = new System.Windows.Forms.Padding(2);
             this.num6.Name = "num6";
             this.num6.Size = new System.Drawing.Size(75, 80);
             this.num6.TabIndex = 5;
@@ -129,7 +130,7 @@
             // 
             this.num5.Font = new System.Drawing.Font("微软雅黑", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.num5.Location = new System.Drawing.Point(25, 109);
-            this.num5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.num5.Margin = new System.Windows.Forms.Padding(2);
             this.num5.Name = "num5";
             this.num5.Size = new System.Drawing.Size(75, 80);
             this.num5.TabIndex = 4;
@@ -140,7 +141,7 @@
             // 
             this.num12.Font = new System.Drawing.Font("微软雅黑", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.num12.Location = new System.Drawing.Point(263, 194);
-            this.num12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.num12.Margin = new System.Windows.Forms.Padding(2);
             this.num12.Name = "num12";
             this.num12.Size = new System.Drawing.Size(75, 80);
             this.num12.TabIndex = 11;
@@ -151,7 +152,7 @@
             // 
             this.num11.Font = new System.Drawing.Font("微软雅黑", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.num11.Location = new System.Drawing.Point(184, 194);
-            this.num11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.num11.Margin = new System.Windows.Forms.Padding(2);
             this.num11.Name = "num11";
             this.num11.Size = new System.Drawing.Size(75, 80);
             this.num11.TabIndex = 10;
@@ -162,7 +163,7 @@
             // 
             this.num10.Font = new System.Drawing.Font("微软雅黑", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.num10.Location = new System.Drawing.Point(104, 194);
-            this.num10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.num10.Margin = new System.Windows.Forms.Padding(2);
             this.num10.Name = "num10";
             this.num10.Size = new System.Drawing.Size(75, 80);
             this.num10.TabIndex = 9;
@@ -173,7 +174,7 @@
             // 
             this.num9.Font = new System.Drawing.Font("微软雅黑", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.num9.Location = new System.Drawing.Point(25, 194);
-            this.num9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.num9.Margin = new System.Windows.Forms.Padding(2);
             this.num9.Name = "num9";
             this.num9.Size = new System.Drawing.Size(75, 80);
             this.num9.TabIndex = 8;
@@ -187,7 +188,7 @@
             this.num_empty.Font = new System.Drawing.Font("微软雅黑", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.num_empty.ForeColor = System.Drawing.SystemColors.Control;
             this.num_empty.Location = new System.Drawing.Point(263, 278);
-            this.num_empty.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.num_empty.Margin = new System.Windows.Forms.Padding(2);
             this.num_empty.Name = "num_empty";
             this.num_empty.Size = new System.Drawing.Size(75, 80);
             this.num_empty.TabIndex = 15;
@@ -197,7 +198,7 @@
             // 
             this.num15.Font = new System.Drawing.Font("微软雅黑", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.num15.Location = new System.Drawing.Point(184, 278);
-            this.num15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.num15.Margin = new System.Windows.Forms.Padding(2);
             this.num15.Name = "num15";
             this.num15.Size = new System.Drawing.Size(75, 80);
             this.num15.TabIndex = 14;
@@ -208,7 +209,7 @@
             // 
             this.num14.Font = new System.Drawing.Font("微软雅黑", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.num14.Location = new System.Drawing.Point(104, 278);
-            this.num14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.num14.Margin = new System.Windows.Forms.Padding(2);
             this.num14.Name = "num14";
             this.num14.Size = new System.Drawing.Size(75, 80);
             this.num14.TabIndex = 13;
@@ -219,7 +220,7 @@
             // 
             this.num13.Font = new System.Drawing.Font("微软雅黑", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.num13.Location = new System.Drawing.Point(25, 278);
-            this.num13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.num13.Margin = new System.Windows.Forms.Padding(2);
             this.num13.Name = "num13";
             this.num13.Size = new System.Drawing.Size(75, 80);
             this.num13.TabIndex = 12;
@@ -229,10 +230,10 @@
             // button_start
             // 
             this.button_start.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold);
-            this.button_start.Location = new System.Drawing.Point(25, 384);
-            this.button_start.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_start.Location = new System.Drawing.Point(25, 406);
+            this.button_start.Margin = new System.Windows.Forms.Padding(2);
             this.button_start.Name = "button_start";
-            this.button_start.Size = new System.Drawing.Size(154, 32);
+            this.button_start.Size = new System.Drawing.Size(313, 32);
             this.button_start.TabIndex = 16;
             this.button_start.Text = "Start";
             this.button_start.UseVisualStyleBackColor = true;
@@ -241,8 +242,8 @@
             // file_chose
             // 
             this.file_chose.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold);
-            this.file_chose.Location = new System.Drawing.Point(184, 384);
-            this.file_chose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.file_chose.Location = new System.Drawing.Point(184, 370);
+            this.file_chose.Margin = new System.Windows.Forms.Padding(2);
             this.file_chose.Name = "file_chose";
             this.file_chose.Size = new System.Drawing.Size(154, 32);
             this.file_chose.TabIndex = 17;
@@ -250,11 +251,23 @@
             this.file_chose.UseVisualStyleBackColor = true;
             this.file_chose.Click += new System.EventHandler(this.file_chose_Click);
             // 
+            // button_reload
+            // 
+            this.button_reload.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold);
+            this.button_reload.Location = new System.Drawing.Point(25, 370);
+            this.button_reload.Name = "button_reload";
+            this.button_reload.Size = new System.Drawing.Size(154, 31);
+            this.button_reload.TabIndex = 18;
+            this.button_reload.Text = "Reload";
+            this.button_reload.UseVisualStyleBackColor = true;
+            this.button_reload.Click += new System.EventHandler(this.button_reload_Click);
+            // 
             // N_Puzzle_Visual_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(363, 449);
+            this.Controls.Add(this.button_reload);
             this.Controls.Add(this.file_chose);
             this.Controls.Add(this.num12);
             this.Controls.Add(this.button_start);
@@ -273,7 +286,7 @@
             this.Controls.Add(this.num2);
             this.Controls.Add(this.num1);
             this.Controls.Add(this.num_empty);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximumSize = new System.Drawing.Size(379, 488);
             this.MinimumSize = new System.Drawing.Size(379, 488);
             this.Name = "N_Puzzle_Visual_Form";
@@ -304,6 +317,7 @@
         private System.Windows.Forms.Button num13;
         private System.Windows.Forms.Button button_start;
         private System.Windows.Forms.Button file_chose;
+        private System.Windows.Forms.Button button_reload;
     }
 }
 

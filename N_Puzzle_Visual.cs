@@ -204,5 +204,11 @@ namespace N_Puzzle_Visual
                 return;//直接结束
             }
         }
+
+        private void button_reload_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+            Application.Exit();
+        }
     }
 }
