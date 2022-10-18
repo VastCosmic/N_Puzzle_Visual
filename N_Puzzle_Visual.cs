@@ -21,7 +21,9 @@ namespace N_Puzzle_Visual
         }
 
         //默认Block坐标 16 Blocks with x,y
-        public int[,] Block_default = new int[17, 2];    
+        public int[,] Block_default = new int[17, 2];
+        //创建按钮控件数组
+        private Button[] num = new Button[16];
         private void N_Puzzle_Visual_Form_Load(object sender, EventArgs e)  //窗体加载
         {
             //使用控件数组绑定设计器中设定好的按钮
@@ -78,8 +80,7 @@ namespace N_Puzzle_Visual
                 {
                     MessageBox.Show("路径文件格式错误！", "警告");
                 }
-            }
-            
+            }            
         }
 
         public int[] Block_F = new int[16]; //存储初始的格子顺序
@@ -112,8 +113,6 @@ namespace N_Puzzle_Visual
             }
         }
 
-        //创建按钮控件数组
-        private Button[] num = new Button[16];
         private void button_start_Click(object sender, EventArgs e)
         {
             //文件读取
@@ -156,9 +155,7 @@ namespace N_Puzzle_Visual
                 }
                 return; //直接结束
             }
-
-
-            if (num[block].Location.X < num[0].Location.X)
+            else if (num[block].Location.X < num[0].Location.X)
             {
                 while (num[block].Location.X < num[0].Location.X)
                 {
@@ -172,9 +169,7 @@ namespace N_Puzzle_Visual
                 }
                 return; //直接结束
             }
-
-
-            if (num[block].Location.Y > num[0].Location.Y)
+            else if (num[block].Location.Y > num[0].Location.Y)
             {
                 while (num[block].Location.Y > num[0].Location.Y)
                 {
@@ -188,8 +183,7 @@ namespace N_Puzzle_Visual
                 }
                 return; //直接结束
             }
-
-            if (num[block].Location.Y < num[0].Location.Y)
+            else if (num[block].Location.Y < num[0].Location.Y)
             {
                 while (num[block].Location.Y < num[0].Location.Y)
                 {
@@ -202,6 +196,12 @@ namespace N_Puzzle_Visual
                     //Thread.Sleep(1);
                 }
                 return;//直接结束
+            }
+            else
+            {
+                MessageBox.Show("路径错误！");
+                Application.Restart();
+                Application.Exit();
             }
         }
 
